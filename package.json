@@ -1,7 +1,7 @@
 {
-  "name": "@nm/ts-template",
+  "name": "1-2and3",
   "version": "1.0.0",
-  "description": "template for typescript package.",
+  "description": "Utility to join array element with `,` and last element with `and`",
   "main": "built/index.js",
   "scripts": {
     "build": "rimraf built && tsc",
@@ -15,7 +15,10 @@
   },
   "keywords": [
     "typescript",
-    "starter"
+    "array",
+    "join with",
+    "join",
+    "utility"
   ],
   "author": "Ninad Mahajan",
   "license": "MIT",

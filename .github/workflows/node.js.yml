@@ -30,6 +30,6 @@ jobs:
       run: npm test
     - name: Build
       run: npm run build
-#    - name: Codecov
-#      uses: codecov/codecov-action@v2.1.0
+    - name: Codecov
+      uses: codecov/codecov-action@v2.1.0
 
