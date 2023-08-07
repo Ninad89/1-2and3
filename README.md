@@ -1,40 +1,25 @@
-## ts-template
+## 1, 2, and 3
 
-This is template project with typescript.
+This utility joins array elements with `, ` and last element with `and`
 
-This project is a good starting point if you want to create and publish npm module.
+Suppose if you want to join all elements of string array, but not just with the `,` . 
 
-This project includes
-- Typescript
-- ts-node-dev setup for development
-- jest setup for unit test cases with coverage report
-- eslint setup
-- pretier setup
-- commitlint setup
-- Github actions for CI and npm publish
----
-### How to
-- Get started
+This utility is here to just solve that tiny problem.
 
-        git clone <repo_url> <folder>
-        cd folder
-        npm install
+### Let's see how to use.
+```
+import join from '1-2and3'
 
-- Run code in dev mode (watch your changes, and if changed re run automatically)
+join(['1', '2', '3', '4']) // 1, 2, 3 and 4
+join(['1', '2']) // 1 and 2
+join(['1']) // 1
+join([]) //
+join(['1', '2', '3', '4'], ', ', '&') // 1, 2, 3 & 4
+```
+> Element separator can be customized by passing second parameter to function.
 
-        npm start
+> Last element separator also can be customized by passing third argument to function
 
-- Run test cases
 
-        npm test
-
-- Build your code
-
-        npm run build
----
-
-### Todo
- - *How To* guide
- -  github actions
- - fork this for api with docker setup
- ---
+### License
+MIT
