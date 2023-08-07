@@ -1,6 +1,6 @@
 name: Node.js CI
 
-on: 
+on:
   pull_request:
     branches:
       - 'main'
@@ -14,22 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x,18.x]
+        node-version: [16.x, 18.x, 20.x]
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Npm install
-      run: npm ci
-    - name: Lint
-      run: npm run lint
-    - name: Unit test
-      run: npm test
-    - name: Build
-      run: npm run build
-    - name: Codecov
-      uses: codecov/codecov-action@v2.1.0
-
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Npm install
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Unit test
+        run: npm test
+      - name: Build
+        run: npm run build
+      - name: Codecov
+        uses: codecov/codecov-action@v2.1.0
