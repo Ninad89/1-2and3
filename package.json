@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Utility to join array element with `,` and last element with `and`",
   "main": "built/index.js",
+  "types": "built/index.d.ts",
   "scripts": {
     "build": "rimraf built && tsc",
     "test": "jest",
