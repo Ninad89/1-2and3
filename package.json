@@ -19,10 +19,21 @@
     "array",
     "join with",
     "join",
-    "utility"
+    "utility",
+    "2 separator",
+    "1-2and3",
+    "array utilities"
   ],
   "author": "Ninad Mahajan",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ninad89/1-2and3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ninad89/1-2and3/issues"
+  },
+  "homepage": "https://github.com/Ninad89/1-2and3",
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
