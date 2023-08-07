@@ -11,7 +11,7 @@
     "start": "tsnd --respawn src/index.ts",
     "prepare": "husky install",
     "commitlint": "commitlint --edit",
-    "prepublishOnly": "npm run tslint && npm test && npm run build",
+    "prepublishOnly": "npm run lint && npm test && npm run build",
     "format": "prettier src --write"
   },
   "keywords": [
