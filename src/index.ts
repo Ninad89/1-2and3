@@ -15,5 +15,5 @@
 
 export function join(arr: string[], joinWith: string = ', ', joinLastWith: string = 'and'):string {
   if (arr.length <= 2) return arr.join(` ${joinLastWith.trim()} `);
-  return `${arr.slice(0,-1).join(joinWith)} ${joinLastWith.trim()} ${arr[arr.length - 1]}`;
+  return `${arr.slice(0,-1).join(joinWith)} ${joinLastWith.trim()} ${arr.at(-1)}`;
 }
