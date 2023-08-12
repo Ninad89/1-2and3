@@ -1,6 +1,6 @@
 {
   "name": "1-2and3",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Utility to join array element with `,` and last element with `and`",
   "main": "built/index.js",
   "types": "built/index.d.ts",
