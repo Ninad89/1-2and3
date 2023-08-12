@@ -1,4 +1,12 @@
 ## 1, 2, and 3
+---
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/Ninad89/1-2and3/node.js.yml)
+![Codecov](https://img.shields.io/codecov/c/gh/Ninad89/1-2and3)
+![npm](https://img.shields.io/npm/dt/1-2and3)
+![NPM](https://img.shields.io/npm/l/1-2and3)
+
+[![NPM](https://nodei.co/npm/1-2and3.png)](https://nodei.co/npm/1-2and3/)
+
 
 This utility joins array elements with `, ` and last element with `and`
 
